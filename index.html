@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Salary Calculator</h3>
+    <main>
+        <section>
+            <h1>Salary Calculator</h1>
+            <form>
+                <h3>Add Employee</h3>
+                <input type="text" id="first-ame" placeholder="First Name" />
+                <input type="text" id="last-ame" placeholder="Last Name" />
+                <input type="text" id="em-id" placeholder="ID" />
+                <input type="text" id="title" placeholder="Title" />
+                <input type="text" id="annual-salary" placeholder="Annual Salary" />
+                <button id="add-employee">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h3>Employees</h3>
+            <table>
+                <thead>
+                        <tr><th>First Name</th> <th>Last Name</th> <th>ID</th> <th>Title</th> <th>Annual Salary</th> <th> &nbsp; </th></tr>
+                </thead>
+                <tbody>
+                    <!-- jQuery will fill this in -->
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
