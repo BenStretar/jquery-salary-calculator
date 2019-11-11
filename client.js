@@ -13,11 +13,11 @@ const employees =[];
 // take input deom the form and put into employees array
 function addEmployeesTable(event){
     event.preventDefault();
-    let firstName = $('#first-name').val()
-    let lastName = $('#last-name').val()
-    let id = $('#em-id').val()
-    let title = $('#title').val()
-    let annualSalary = $('#annual-salary').val()
+    let firstName = $('#first-name').val();
+    let lastName = $('#last-name').val();
+    let id = $('#em-id').val();
+    let title = $('#title').val();
+    let annualSalary = $('#annual-salary').val();
 
     employees.push(
         {
@@ -37,7 +37,6 @@ function addEmployeesTable(event){
 }
 
 // show employees on the DOM
-
 function showEmployees(array){
     $('#employee-table').empty();
 
@@ -52,8 +51,9 @@ function showEmployees(array){
             <td><button class='delete'>Delete</button></td>
         </tr>
         `);
-    }
-}
+    } // end for
+} // end ShowEmployees
+
 //remove employee from the DOM
 function removeEmployee(){
    // console.log('removeEmployee');
@@ -62,7 +62,7 @@ function removeEmployee(){
     // console.log('button', button);
 
     button.closest('tr').remove();
-}
+} //end removeEmployee
 
 
 
@@ -83,7 +83,7 @@ function calculateMonthlyTotal(){
 
     // change color if over or equal to $20,000
     if (monthlySal >= 20000){
-        $('#monthlyTotal').addClass('red');
+       // $('#monthlyTotal').addClass('red');
         $('#monthlyHeader').addClass('red');
     }
-}
+} // end calculateMonthlyTotal
